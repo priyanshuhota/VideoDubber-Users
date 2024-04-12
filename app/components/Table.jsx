@@ -100,7 +100,7 @@ export default function TableSelection() {
           <Group gap="sm">
             <Avatar size={26} src={item.avatar} radius={26} />
             <Text size="sm" fw={500}>
-              {item.name || item.email.split("@")[0]}
+              {item.name || item.email.toString().split("@")[0]}
             </Text>
           </Group>
         </Table.Td>
